@@ -94,7 +94,8 @@ outputs:
   pull-request-branch:
     description: 'The pull request branch name'
 runs:
-  using: 'node26'
+  # Not supporting node26
+  using: 'node24'
   main: 'dist/index.js'
 branding:
   icon: 'git-pull-request'
